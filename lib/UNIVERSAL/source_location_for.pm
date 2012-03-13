@@ -9,7 +9,7 @@ use B ();
 
 sub UNIVERSAL::source_location_for {
     my($self, $method) = @_;
-    my $entity = $self->can($method) or return undef;
+    my $entity = $self->can($method) or return();
     my $gv     = B::svref_2object($entity)->GV;
     return($gv->FILE, $gv->LINE);
 }

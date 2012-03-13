@@ -18,6 +18,12 @@ _is(
     5
 );
 
+_is(
+    Chi->source_location_for('null'),
+    undef,
+    undef
+);
+
 done_testing;
 
 sub _is {
