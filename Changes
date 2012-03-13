@@ -1,5 +1,4 @@
 Revision history for Perl extension UNIVERSAL::source_location_for
 
-NEXT <<SET RELEASE DATE HERE>>
-    - original version; created by dim
-      at Tue Mar 13 14:28:47 2012.
+0.01    Tue Mar 13 17:29:00 2012
+        - original version
