@@ -21,10 +21,6 @@ __END__
 
 UNIVERSAL::source_location_for - Get source filename and line number of a subroutine
 
-=head1 VERSION
-
-This document describes UNIVERSAL::source_location_for version 0.01.
-
 =head1 SYNOPSIS
 
     use UNIVERSAL::source_location_for;
@@ -34,15 +30,15 @@ This document describes UNIVERSAL::source_location_for version 0.01.
 
 =head1 DESCRIPTION
 
-    This module supplys a universal function "source_location_for",  a perl implementation of the method Method#source_location of Ruby.
+This module supplys a universal function "source_location_for",  a perl implementation of the method Method#source_location of Ruby.
 
-    It's useful for debug.
+It's useful for debug.
 
 =head2 Functions
 
 =head3 C<< Module->source_location_for('method') >>
 
-    Reuturn source filename and line number of the subroutine.
+Reuturn source filename and line number of the subroutine.
 
 =head1 AUTHOR
 
