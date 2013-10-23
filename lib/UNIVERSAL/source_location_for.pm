@@ -6,13 +6,14 @@ use warnings;
 our $VERSION = '0.01';
 
 use B ();
+use Carp qw(carp);
 
 sub UNIVERSAL::source_location_for {
     my($self, $method) = @_;
     my $entity = $self->can($method);
 
     unless ($entity) {
-        warn ("Undefined subroutine " . (ref $self ? ref $self : $self) . "::" . $method);
+        carp ("Undefined subroutine " . (ref $self ? ref $self : $self) . "::" . $method);
         return();
     }
 

@@ -26,6 +26,8 @@ use inc::Module::Install;
 
 all_from 'lib/UNIVERSAL/source_location_for.pm';
 
+requires 'B';
+requires 'Carp';
 
 test_requires 'Test::More'     => '0.88';
 test_requires 'Test::Requires' => '0.06';
