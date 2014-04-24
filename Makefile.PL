@@ -28,17 +28,20 @@ all_from 'lib/UNIVERSAL/source_location_for.pm';
 
 requires 'B';
 requires 'Carp';
+requires 'Term::ANSIColor';
+requires 'UNIVERSAL::require';
 
 test_requires 'Test::More'     => '0.88';
 test_requires 'Test::Requires' => '0.06';
 test_requires 'Path::Class';
 test_requires 'FindBin::libs';
 
+install_script 'bin/source_location.pl';
+
 auto_set_repository;
 
 tests_recursive;
 author_tests 'xt';
-
 
 clean_files qw(
     UNIVERSAL-source_location_for-*
