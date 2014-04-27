@@ -3,7 +3,7 @@ use 5.008_001;
 use strict;
 use warnings;
 
-our $VERSION = '0.10';
+our $VERSION = '0.11';
 
 use B ();
 use Carp qw(carp);
@@ -46,6 +46,14 @@ It's useful for debug.
 =head3 C<< Module->source_location_for('method') >>
 
 Reuturn source filename and line number of the subroutine.
+
+=head1 SEE ALSO
+
+=over
+
+=item L<UNIVERSAL::which>
+
+=back
 
 =head1 AUTHOR
 
